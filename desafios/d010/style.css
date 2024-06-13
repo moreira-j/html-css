@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tiny5&display=swap');
+
+@font-face {
+    font-family: droid;
+    src: url(fontes/idroid.otf);
+}
+
+  
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+}
+
+body {
+    background-color: var(--cor1);
+    margin: 0px;
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(0deg, var(--cor5), var(--cor2));
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.747);
+}
+
+section#titulo-header {
+    display: block;
+    width: 300px;
+    margin: auto;
+    color: white;
+    padding-top: 1px;
+}
+
+nav {
+    text-align: left;
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+}
+
+h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+}
+
+h2 {
+    font-family: droid;
+    color: var(--cor4);
+}
+
+h3 {
+    font-family: droid;
+    color: var(--cor4);
+    background-image: linear-gradient(90deg, var(--cor0), rgba(255, 255, 255, 0));
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    max-width: 800px;
+    margin: auto;
+}
