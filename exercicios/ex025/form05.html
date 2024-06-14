@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="idk.php" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="nome">Nome Completo*</label>
+                <input type="text" name="nome" id="nome" required placeholder="Nome Completo">
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </p>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sex" id="sexmasc" value="M"> <label for="sexmasc">Masculino</label>
+                <input type="radio" name="sex" id="sexfem" value="F"> <label for="sexfem">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="esfut" id="esfut"> <label for="esfut">Futebol</label><br>
+                <input type="checkbox" name="esbasq" id="esbasq"> <label for="esbasq">Basquete</label><br>
+                <input type="checkbox" name="esvol" id="esvol"> <label for="esvol">Vôlei</label><br>
+                <input type="checkbox" name="esten" id="esten"> <label for="esten">Tênis</label><br>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

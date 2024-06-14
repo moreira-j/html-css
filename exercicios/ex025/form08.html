@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usando Javascript</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Soma</legend>
+            <p>
+                <label for="n1">Número 1</label>
+                <input type="number" name="n1" id="n1" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+            </p>
+            <p>
+                <label for="n2">Número 2</label>
+                <input type="number" name="n2" id="n2" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+            </p>
+            <p>
+                <label for="soma">Soma</label>
+                <output name="soma" id="soma">0</output>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Display Numero</legend>
+            <p>
+                <label for="value">Valor</label>
+                <input type="range" name="inum" id="inum" min="0" max="10" oninput="ival.innerHTML = Number(inum.value)">
+                <output name="ival" id="ival">5</output>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Calcular Idade</legend>
+            <p>
+                <label for="ano">Em Que Ano Você Nasceu?</label>
+                <input type="number" name="inAno" id="inAno" min="1900" max="2024" oninput="calcIdade()">
+            </p>
+            <p>
+                <label for="outidade">Sua Idade é</label>
+                <output name="outIdade" id="outIdade"></output>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let anoAtual = new Date().getFullYear()
+            outIdade.innerHTML = Number(anoAtual) - Number(inAno.value)
+        }
+    </script>
+</body>
+</html>
