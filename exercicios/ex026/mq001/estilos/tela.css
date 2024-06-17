@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(121, 199, 199);
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 2.5em;
+}
+
+menu {
+    background-color: rgb(110, 170, 151);
+    padding: 5px;
+}
+
+menu li {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(36, 73, 61);
+    color: white;
+}
+
+article {
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+
+article h2 {
+    margin: 20px;
+    text-align: center;
+}
